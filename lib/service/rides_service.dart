@@ -9,7 +9,9 @@ class RidesService {
   //  filter the rides starting from given departure location
   //
   static List<Ride> _filterByDeparture(Location departure) {
-    return [];
+    return fakeRides.where((r) {
+      return ride.departureLocation;
+    }).toList();
   }
 
   //
